@@ -1,0 +1,6 @@
+framework module YLDependencyCategories {
+  umbrella header "YLDependencyCategories-umbrella.h"
+
+  export *
+  module * { export * }
+}

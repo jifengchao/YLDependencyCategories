@@ -1,0 +1,45 @@
+{
+  "name": "YLDependencyCategories",
+  "version": "0.1.0",
+  "summary": "A short description of YLDependencyCategories.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jifengchao/YLDependencyCategories",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jifengchao": "daichao@xiaoma.cn"
+  },
+  "source": {
+    "path": "."
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "YLDependencyCategories/Classes/**/*",
+  "dependencies": {
+    "JKCategories": [
+      "1.9.2"
+    ],
+    "ZXingObjC": [
+      "3.2.2"
+    ],
+    "GKPhotoBrowser/SD": [
+      "2.2.1"
+    ],
+    "SDWebImage": [
+      "5.11.1"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "WHC_Debuger",
+      "source_files": "YLDependencyCategories/Classes/WHC_Debuger/*"
+    },
+    {
+      "name": "YLDependencyCategories",
+      "source_files": "YLDependencyCategories/Classes/YLDependencyCategories/**/*"
+    }
+  ]
+}
