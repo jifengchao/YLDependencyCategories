@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YLDependencyCategories'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'YLDependencyCategories component'
 
   s.homepage         = 'https://github.com/jifengchao/YLDependencyCategories'
@@ -17,14 +17,60 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
+  # s.source           = { :path => '.' }
   s.source           = { :git => 'https://github.com/jifengchao/YLDependencyCategories.git', :tag => s.version.to_s }
-  s.source_files = "YLDependencyCategories/Classes/WHC_Debuger/*.{h,m}"
+  s.source_files = "YLDependencyCategories/YLDependencyCategories.h","YLDependencyCategories/WHC_Debuger/*"
   
   # s.requires_arc     = true
     
-  s.dependency 'JKCategories', '1.9.2'
-  s.dependency 'ZXingObjC', '3.2.2'
-  s.dependency 'GKPhotoBrowser/SD', '2.2.1'
-  s.dependency 'SDWebImage', '5.11.1'
+  # s.dependency 'JKCategories', '1.9.2'
+  # s.dependency 'ZXingObjC', '3.2.2'
+  # s.dependency 'GKPhotoBrowser/SD', '2.2.1'
+  # s.dependency 'SDWebImage', '5.11.1'
+
+
+
+  #Foundation
+  s.subspec 'Foundation' do |foundation|
+      foundation.public_header_files = 'YLDependencyCategories/YLDependencyCategories/Foundation/YLDependencyFoundation.h'
+      foundation.source_files = 'YLDependencyCategories/YLDependencyCategories/Foundation/YLDependencyFoundation.h'
+      foundation.frameworks = 'Foundation'
+
+      #三级
+      foundation.subspec 'NSObject' do |object|
+          object.source_files = 'YLDependencyCategories/YLDependencyCategories/Foundation/NSObject/*.{h,m}'
+          object.dependency 'JKCategories', '1.9.2'
+      end
+      foundation.subspec 'NSString' do |string|
+          string.source_files = 'YLDependencyCategories/YLDependencyCategories/Foundation/NSString/*.{h,m}'
+          string.dependency 'JKCategories', '1.9.2'
+      end
+  end
+
+
+  #UIKit
+  s.subspec 'UIKit' do |uikit|
+      uikit.public_header_files = 'YLCategories/UIKit/YLDependencyUIKit.h'
+      uikit.source_files = 'YLDependencyCategories/YLDependencyCategories/UIKit/YLDependencyUIKit.h'
+      uikit.frameworks = 'UIKit'
+
+      #三级
+      uikit.subspec 'UIColor' do |color|
+          color.source_files = 'YLDependencyCategories/YLDependencyCategories/UIKit/UIColor/*.{h,m}'
+          color.dependency 'JKCategories', '1.9.2'
+      end
+      uikit.subspec 'UIImage' do |image|
+          image.source_files = 'YLDependencyCategories/YLDependencyCategories/UIKit/UIImage/*.{h,m}'
+          image.dependency 'ZXingObjC', '3.2.2'
+          image.dependency 'SDWebImage', '5.11.1'
+      end
+      uikit.subspec 'UIView' do |view|
+          view.source_files = 'YLDependencyCategories/YLDependencyCategories/UIKit/UIView/*.{h,m}'
+          view.dependency 'JKCategories', '1.9.2'
+          view.dependency 'GKPhotoBrowser/SD', '2.2.1'
+      end
+  end
+
+
 
 end

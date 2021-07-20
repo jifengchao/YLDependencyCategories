@@ -144,23 +144,28 @@ PODS:
   - SDWebImage (5.11.1):
     - SDWebImage/Core (= 5.11.1)
   - SDWebImage/Core (5.11.1)
-  - YLDependencyCategories (0.1.0):
+  - YLDependencyCategories (0.1.2):
+    - YLDependencyCategories/Foundation (= 0.1.2)
+    - YLDependencyCategories/UIKit (= 0.1.2)
+  - YLDependencyCategories/Foundation (0.1.2):
+    - YLDependencyCategories/Foundation/NSObject (= 0.1.2)
+    - YLDependencyCategories/Foundation/NSString (= 0.1.2)
+  - YLDependencyCategories/Foundation/NSObject (0.1.2):
+    - JKCategories (= 1.9.2)
+  - YLDependencyCategories/Foundation/NSString (0.1.2):
+    - JKCategories (= 1.9.2)
+  - YLDependencyCategories/UIKit (0.1.2):
+    - YLDependencyCategories/UIKit/UIColor (= 0.1.2)
+    - YLDependencyCategories/UIKit/UIImage (= 0.1.2)
+    - YLDependencyCategories/UIKit/UIView (= 0.1.2)
+  - YLDependencyCategories/UIKit/UIColor (0.1.2):
+    - JKCategories (= 1.9.2)
+  - YLDependencyCategories/UIKit/UIImage (0.1.2):
+    - SDWebImage (= 5.11.1)
+    - ZXingObjC (= 3.2.2)
+  - YLDependencyCategories/UIKit/UIView (0.1.2):
     - GKPhotoBrowser/SD (= 2.2.1)
     - JKCategories (= 1.9.2)
-    - SDWebImage (= 5.11.1)
-    - YLDependencyCategories/WHC_Debuger (= 0.1.0)
-    - YLDependencyCategories/YLDependencyCategories (= 0.1.0)
-    - ZXingObjC (= 3.2.2)
-  - YLDependencyCategories/WHC_Debuger (0.1.0):
-    - GKPhotoBrowser/SD (= 2.2.1)
-    - JKCategories (= 1.9.2)
-    - SDWebImage (= 5.11.1)
-    - ZXingObjC (= 3.2.2)
-  - YLDependencyCategories/YLDependencyCategories (0.1.0):
-    - GKPhotoBrowser/SD (= 2.2.1)
-    - JKCategories (= 1.9.2)
-    - SDWebImage (= 5.11.1)
-    - ZXingObjC (= 3.2.2)
   - ZXingObjC (3.2.2):
     - ZXingObjC/All (= 3.2.2)
   - ZXingObjC/All (3.2.2)
@@ -183,9 +188,9 @@ SPEC CHECKSUMS:
   GKPhotoBrowser: 16a9f50f2a8ff253e576659a74ecf938fb700a39
   JKCategories: 83d85cc7455e265fbdb2f4add3c77c643fad57f5
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
-  YLDependencyCategories: 2d95053bfa5cfe7832bae0fef7f8b96cc6ab7bcb
+  YLDependencyCategories: ca9e1620d038a8a2b23affdaad916b107e9255d2
   ZXingObjC: 2c95a0dc52daac69b23ec78fad8fa2fec05f8981
 
 PODFILE CHECKSUM: 708a65810bae32101233ac07a28e6cb6759a4348
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1

@@ -1,45 +1,92 @@
 {
   "name": "YLDependencyCategories",
-  "version": "0.1.0",
-  "summary": "A short description of YLDependencyCategories.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.1.2",
+  "summary": "YLDependencyCategories component",
   "homepage": "https://github.com/jifengchao/YLDependencyCategories",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "jifengchao": "daichao@xiaoma.cn"
-  },
-  "source": {
-    "path": "."
+    "jifengchao": "965524749@qq.com"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "YLDependencyCategories/Classes/**/*",
-  "dependencies": {
-    "JKCategories": [
-      "1.9.2"
-    ],
-    "ZXingObjC": [
-      "3.2.2"
-    ],
-    "GKPhotoBrowser/SD": [
-      "2.2.1"
-    ],
-    "SDWebImage": [
-      "5.11.1"
-    ]
+  "source": {
+    "path": "."
   },
+  "source_files": [
+    "YLDependencyCategories/YLDependencyCategories.h",
+    "YLDependencyCategories/WHC_Debuger/*"
+  ],
   "subspecs": [
     {
-      "name": "WHC_Debuger",
-      "source_files": "YLDependencyCategories/Classes/WHC_Debuger/*"
+      "name": "Foundation",
+      "public_header_files": "YLDependencyCategories/YLDependencyCategories/Foundation/YLDependencyFoundation.h",
+      "source_files": "YLDependencyCategories/YLDependencyCategories/Foundation/YLDependencyFoundation.h",
+      "frameworks": "Foundation",
+      "subspecs": [
+        {
+          "name": "NSObject",
+          "source_files": "YLDependencyCategories/YLDependencyCategories/Foundation/NSObject/*.{h,m}",
+          "dependencies": {
+            "JKCategories": [
+              "1.9.2"
+            ]
+          }
+        },
+        {
+          "name": "NSString",
+          "source_files": "YLDependencyCategories/YLDependencyCategories/Foundation/NSString/*.{h,m}",
+          "dependencies": {
+            "JKCategories": [
+              "1.9.2"
+            ]
+          }
+        }
+      ]
     },
     {
-      "name": "YLDependencyCategories",
-      "source_files": "YLDependencyCategories/Classes/YLDependencyCategories/**/*"
+      "name": "UIKit",
+      "public_header_files": "YLCategories/UIKit/YLDependencyUIKit.h",
+      "source_files": "YLDependencyCategories/YLDependencyCategories/UIKit/YLDependencyUIKit.h",
+      "frameworks": "UIKit",
+      "subspecs": [
+        {
+          "name": "UIColor",
+          "source_files": "YLDependencyCategories/YLDependencyCategories/UIKit/UIColor/*.{h,m}",
+          "dependencies": {
+            "JKCategories": [
+              "1.9.2"
+            ]
+          }
+        },
+        {
+          "name": "UIImage",
+          "source_files": "YLDependencyCategories/YLDependencyCategories/UIKit/UIImage/*.{h,m}",
+          "dependencies": {
+            "ZXingObjC": [
+              "3.2.2"
+            ],
+            "SDWebImage": [
+              "5.11.1"
+            ]
+          }
+        },
+        {
+          "name": "UIView",
+          "source_files": "YLDependencyCategories/YLDependencyCategories/UIKit/UIView/*.{h,m}",
+          "dependencies": {
+            "JKCategories": [
+              "1.9.2"
+            ],
+            "GKPhotoBrowser/SD": [
+              "2.2.1"
+            ]
+          }
+        }
+      ]
     }
   ]
 }
