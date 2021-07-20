@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YLDependencyCategories'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'YLDependencyCategories component'
 
   s.homepage         = 'https://github.com/jifengchao/YLDependencyCategories'
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   # s.source           = { :path => '.' }
   s.source           = { :git => 'https://github.com/jifengchao/YLDependencyCategories.git', :tag => s.version.to_s }
-  s.source_files = "YLDependencyCategories/YLDependencyCategories.h","YLDependencyCategories/WHC_Debuger/*"
+  s.source_files = "YLDependencyCategories/YLDependencyCategories.h"
   
   # s.requires_arc     = true
     
@@ -28,6 +28,12 @@ Pod::Spec.new do |s|
   # s.dependency 'GKPhotoBrowser/SD', '2.2.1'
   # s.dependency 'SDWebImage', '5.11.1'
 
+
+
+  #WHC_Debuger
+  s.subspec 'WHC_Debuger' do |debuger|
+      debuger.source_files = 'YLDependencyCategories/WHC_Debuger/*'
+  end
 
 
   #Foundation

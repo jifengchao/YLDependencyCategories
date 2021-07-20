@@ -1,6 +1,6 @@
 {
   "name": "YLDependencyCategories",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "summary": "YLDependencyCategories component",
   "homepage": "https://github.com/jifengchao/YLDependencyCategories",
   "license": {
@@ -15,13 +15,14 @@
   },
   "source": {
     "git": "https://github.com/jifengchao/YLDependencyCategories.git",
-    "tag": "0.1.2"
+    "tag": "0.1.3"
   },
-  "source_files": [
-    "YLDependencyCategories/YLDependencyCategories.h",
-    "YLDependencyCategories/WHC_Debuger/*"
-  ],
+  "source_files": "YLDependencyCategories/YLDependencyCategories.h",
   "subspecs": [
+    {
+      "name": "WHC_Debuger",
+      "source_files": "YLDependencyCategories/WHC_Debuger/*"
+    },
     {
       "name": "Foundation",
       "public_header_files": "YLDependencyCategories/YLDependencyCategories/Foundation/YLDependencyFoundation.h",

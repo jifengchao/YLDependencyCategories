@@ -22,7 +22,7 @@ pod 'YLDependencyCategories'
 
 ## Author
 
-jifengchao, daichao@xiaoma.cn
+jifengchao
 
 ## License
 
