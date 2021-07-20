@@ -188,7 +188,7 @@ SPEC CHECKSUMS:
   GKPhotoBrowser: 16a9f50f2a8ff253e576659a74ecf938fb700a39
   JKCategories: 83d85cc7455e265fbdb2f4add3c77c643fad57f5
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
-  YLDependencyCategories: ca9e1620d038a8a2b23affdaad916b107e9255d2
+  YLDependencyCategories: 186c1e26b38d43ab52d1c7589a9deb4c7d225a5e
   ZXingObjC: 2c95a0dc52daac69b23ec78fad8fa2fec05f8981
 
 PODFILE CHECKSUM: 708a65810bae32101233ac07a28e6cb6759a4348

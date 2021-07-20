@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   s.subspec 'Foundation' do |foundation|
       foundation.public_header_files = 'YLDependencyCategories/YLDependencyCategories/Foundation/YLDependencyFoundation.h'
       foundation.source_files = 'YLDependencyCategories/YLDependencyCategories/Foundation/YLDependencyFoundation.h'
-      foundation.frameworks = 'Foundation'
+      foundation.frameworks = 'Foundation','AdSupport'
 
       #三级
       foundation.subspec 'NSObject' do |object|
@@ -50,7 +50,7 @@ Pod::Spec.new do |s|
 
   #UIKit
   s.subspec 'UIKit' do |uikit|
-      uikit.public_header_files = 'YLCategories/UIKit/YLDependencyUIKit.h'
+      uikit.public_header_files = 'YLDependencyCategories/YLDependencyCategories/UIKit/YLDependencyUIKit.h'
       uikit.source_files = 'YLDependencyCategories/YLDependencyCategories/UIKit/YLDependencyUIKit.h'
       uikit.frameworks = 'UIKit'
 

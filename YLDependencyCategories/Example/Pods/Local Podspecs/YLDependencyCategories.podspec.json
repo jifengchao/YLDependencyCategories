@@ -14,7 +14,8 @@
     "ios": "9.0"
   },
   "source": {
-    "path": "."
+    "git": "https://github.com/jifengchao/YLDependencyCategories.git",
+    "tag": "0.1.2"
   },
   "source_files": [
     "YLDependencyCategories/YLDependencyCategories.h",
@@ -25,7 +26,10 @@
       "name": "Foundation",
       "public_header_files": "YLDependencyCategories/YLDependencyCategories/Foundation/YLDependencyFoundation.h",
       "source_files": "YLDependencyCategories/YLDependencyCategories/Foundation/YLDependencyFoundation.h",
-      "frameworks": "Foundation",
+      "frameworks": [
+        "Foundation",
+        "AdSupport"
+      ],
       "subspecs": [
         {
           "name": "NSObject",
@@ -49,7 +53,7 @@
     },
     {
       "name": "UIKit",
-      "public_header_files": "YLCategories/UIKit/YLDependencyUIKit.h",
+      "public_header_files": "YLDependencyCategories/YLDependencyCategories/UIKit/YLDependencyUIKit.h",
       "source_files": "YLDependencyCategories/YLDependencyCategories/UIKit/YLDependencyUIKit.h",
       "frameworks": "UIKit",
       "subspecs": [
